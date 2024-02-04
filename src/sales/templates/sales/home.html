@@ -1,0 +1,26 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="{% static 'sales/home.js'%}" defer></script>
+</head>
+<!DOCTYPE html>
+<html>
+    <title>
+        Bookstore's Home
+    </title>
+    <body>
+        <br>
+        <h1>Welcome to our Bookstore</h1>
+        <br>
+        <br>
+        
+        <div class="log-container">
+            <a class="log" id="login" href="{% url 'login' %}">Login</a>
+            <a class="log" id="logout" href="{% url 'logout' %}">Logout</a>
+        </div>
+        <br>
+       
+        <br>
+        <img class="center-image" src="{% static 'sales/images/bookstore.jpg' %}" alt="home" width="600" height="300">
+    </body>
+</html>
